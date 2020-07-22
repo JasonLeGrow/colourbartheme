@@ -1,0 +1,193 @@
+\usepackage{framed}
+\setbeamertemplate{blocks}[default]
+
+%%%---OPTIONS---%%%
+%-----------------%
+
+%Sections in header
+\newif\ifbeamer@theme@noheadersections
+\beamer@theme@noheadersectionsfalse
+\DeclareOptionBeamer{noheadersections}[]{\beamer@theme@noheadersectionstrue}
+
+%Text in footer
+\newif\ifbeamer@theme@nofootertext
+\beamer@theme@nofootertextfalse
+\DeclareOptionBeamer{nofootertext}[]{\beamer@theme@nofootertexttrue}
+
+%Insert a frame with section title when new section starts
+\newif\ifbeamer@theme@sectionframes
+\beamer@theme@sectionframesfalse
+\DeclareOptionBeamer{sectionframes}[]{\beamer@theme@sectionframestrue}
+
+%Process options
+\ProcessOptionsBeamer
+
+%Fonts
+\setbeamerfont{alerted text}{series=\bfseries}
+\setbeamerfont{bibliography entry title}{shape=\itshape}
+\setbeamerfont{bibliography item}{series=\normalfont}
+\setbeamerfont{bibliography entry author}{series=\normalfont}
+\setbeamerfont{bibliography entry location}{series=\normalfont}
+
+%Canvas size
+\setbeamersize{text margin left=1em,text margin right=1em}
+
+%Reversed Colour Palettes
+\setbeamercolor{palette sidebar primary reverse}{use = palette sidebar primary, bg=palette sidebar primary.fg, fg=palette sidebar primary.bg}
+\setbeamercolor{palette quaternary reverse}{use = palette quaternary,bg=palette quaternary.fg,fg=palette quaternary.bg}
+\setbeamercolor{palette tertiary reverse}{use = palette tertiary,bg=palette tertiary.fg,fg=palette tertiary.bg}
+\setbeamercolor{palette secondary reverse}{use = palette secondary,bg=palette secondary.fg,fg=palette secondary.bg}
+\setbeamercolor{palette primary reverse}{use = palette primary,bg=palette primary.fg,fg=palette primary.bg}
+
+\mode<presentation>
+
+\setbeamertemplate{navigation symbols}{}
+
+\ifbeamer@theme@noheadersections
+  \setbeamertemplate{headline}{%
+    {%
+      \leavevmode
+      \hbox{\relax%
+	\begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1.125ex]{headline} \end{beamercolorbox}%
+      }%
+      \hbox{\relax%
+	\begin{beamercolorbox}[wd=0.20\paperwidth,ht=2.5ex,dp=1.125ex]{palette primary reverse}{\hfill }\end{beamercolorbox}%
+	\begin{beamercolorbox}[wd=0.20\paperwidth,ht=2.5ex,dp=1.125ex]{palette secondary reverse}{\hfill }\end{beamercolorbox}%
+	\begin{beamercolorbox}[wd=0.20\paperwidth,ht=2.5ex,dp=1.125ex]{palette tertiary reverse}{\hfill }\end{beamercolorbox}%
+	\begin{beamercolorbox}[wd=0.20\paperwidth,ht=2.5ex,dp=1.125ex]{palette quaternary reverse}{\hfill }\end{beamercolorbox}%
+	\begin{beamercolorbox}[wd=0.20\paperwidth,ht=2.5ex,dp=1.125ex]{palette sidebar primary reverse}{\hfill }\end{beamercolorbox}%
+      }%
+    }%
+
+  }
+\else
+  \setbeamertemplate{headline}{%
+    {%
+      \leavevmode
+      \hbox{\relax%
+	\begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1.125ex]{headline}
+	  \parbox{0.20\paperwidth}{\hphantom{x}\insertsectionhead}
+	  \parbox{0.20\paperwidth}{\insertsubsectionhead}
+	  \parbox{0.20\paperwidth}{\insertsubsubsectionhead}
+	\end{beamercolorbox}%
+      }%
+
+      \hbox{\relax%
+	\begin{beamercolorbox}[wd=0.20\paperwidth,ht=2.5ex,dp=1.125ex]{palette primary reverse}{\hfill }\end{beamercolorbox}%
+	\begin{beamercolorbox}[wd=0.20\paperwidth,ht=2.5ex,dp=1.125ex]{palette secondary reverse}{\hfill }\end{beamercolorbox}%
+	\begin{beamercolorbox}[wd=0.20\paperwidth,ht=2.5ex,dp=1.125ex]{palette tertiary reverse}{\hfill }\end{beamercolorbox}%
+	\begin{beamercolorbox}[wd=0.20\paperwidth,ht=2.5ex,dp=1.125ex]{palette quaternary reverse}{\hfill }\end{beamercolorbox}%
+	\begin{beamercolorbox}[wd=0.20\paperwidth,ht=2.5ex,dp=1.125ex]{palette sidebar primary reverse}{\hfill }\end{beamercolorbox}%
+      }%
+
+    }%
+  }
+\fi
+
+
+\ifbeamer@theme@nofootertext
+  \setbeamertemplate{footline}{%
+    {
+      \leavevmode%
+      \hbox{\relax%
+	\begin{beamercolorbox}[wd=0.20\paperwidth,ht=2.5ex,dp=1.125ex]{palette sidebar primary reverse}{\hfill }\end{beamercolorbox}%
+	\begin{beamercolorbox}[wd=0.20\paperwidth,ht=2.5ex,dp=1.125ex]{palette quaternary reverse}{\hfill }\end{beamercolorbox}%
+	\begin{beamercolorbox}[wd=0.20\paperwidth,ht=2.5ex,dp=1.125ex]{palette tertiary reverse}{\hfill }\end{beamercolorbox}%
+	\begin{beamercolorbox}[wd=0.20\paperwidth,ht=2.5ex,dp=1.125ex]{palette secondary reverse}{\hfill }\end{beamercolorbox}%
+	\begin{beamercolorbox}[wd=0.20\paperwidth,ht=2.5ex,dp=1.125ex]{palette primary reverse}{\hfill }\end{beamercolorbox}%
+      }%
+    }%
+
+    {\leavevmode%
+      \hbox{\relax%
+	\begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1.125ex]{footline} \end{beamercolorbox}%
+      }%
+    }%
+  }
+\else
+  \setbeamertemplate{footline}{%
+    {
+      \leavevmode%
+      \hbox{\relax%
+	\begin{beamercolorbox}[wd=0.20\paperwidth,ht=2.5ex,dp=1.125ex]{palette sidebar primary reverse}{\hfill }\end{beamercolorbox}%
+	\begin{beamercolorbox}[wd=0.20\paperwidth,ht=2.5ex,dp=1.125ex]{palette quaternary reverse}{\hfill }\end{beamercolorbox}%
+	\begin{beamercolorbox}[wd=0.20\paperwidth,ht=2.5ex,dp=1.125ex]{palette tertiary reverse}{\hfill }\end{beamercolorbox}%
+	\begin{beamercolorbox}[wd=0.20\paperwidth,ht=2.5ex,dp=1.125ex]{palette secondary reverse}{\hfill }\end{beamercolorbox}%
+	\begin{beamercolorbox}[wd=0.20\paperwidth,ht=2.5ex,dp=1.125ex]{palette primary reverse}{\hfill }\end{beamercolorbox}%
+      }%
+    }%
+
+    {\leavevmode%
+      \hbox{\relax%
+	\begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1.125ex]{footline}
+	  \parbox[t]{0.25\paperwidth}{\hphantom{x}\insertshortauthor}
+	  \hfill
+	  \hfill
+	  \parbox[t]{0.45\paperwidth}{\centering\insertshorttitle}
+	  \hfill
+	  \hfill
+	  \parbox[t]{0.25\paperwidth}{\hfill\insertframenumber/\inserttotalframenumber\hphantom{x}}
+	\end{beamercolorbox}%
+      }%
+    }%
+  }
+\fi
+
+\setbeamertemplate{enumerate items}[default]
+\setbeamertemplate{itemize items}[circle]
+
+\setbeamertemplate{section in toc}{\inserttocsectionnumber.~\inserttocsection}
+\setbeamertemplate{subsection in toc}[default]
+\setbeamertemplate{subsubsection in toc}[default]
+
+\defbeamertemplate*{title page}{customized}[1][]
+{%
+  \vspace{12pt}
+  \begin{center}
+    \hfill\begin{beamercolorbox}[wd=0.9\textwidth,dp=1.125ex,center,rounded=true]{title}\centering\vfill\huge\textbf{\inserttitle}\vfill
+
+      \vspace{6pt}
+    \usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}{\Large\insertsubtitle}\vfill\par\end{beamercolorbox}\hfill{}
+
+    \vspace{24pt}
+    \vfill
+
+    \usebeamerfont{date}\insertdate\par
+    \usebeamerfont{author}\insertauthor\par
+    \usebeamerfont{institute}\insertinstitute\par
+    \usebeamercolor[fg]{titlegraphic}\inserttitlegraphic
+
+    \vfill
+  \end{center}
+}
+
+\ifbeamer@theme@sectionframes
+  \AtBeginSection[]{%
+    {%
+      %\setbeamercolor{background canvas}{bg = frametitle.bg, fg = frametitle.fg}
+      \setbeamertemplate{headline}{%
+	{%
+	  \leavevmode
+	  \hbox{\relax%
+	    \begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1.125ex]{headline} \end{beamercolorbox}%
+	  }%
+	}%
+
+	\hbox{\relax%
+	  \begin{beamercolorbox}[wd=0.20\paperwidth,ht=2.5ex,dp=1.125ex]{palette primary reverse}{\hfill }\end{beamercolorbox}%
+	  \begin{beamercolorbox}[wd=0.20\paperwidth,ht=2.5ex,dp=1.125ex]{palette secondary reverse}{\hfill }\end{beamercolorbox}%
+	  \begin{beamercolorbox}[wd=0.20\paperwidth,ht=2.5ex,dp=1.125ex]{palette tertiary reverse}{\hfill }\end{beamercolorbox}%
+	  \begin{beamercolorbox}[wd=0.20\paperwidth,ht=2.5ex,dp=1.125ex]{palette quaternary reverse}{\hfill }\end{beamercolorbox}%
+	  \begin{beamercolorbox}[wd=0.20\paperwidth,ht=2.5ex,dp=1.125ex]{palette sidebar primary reverse}{\hfill }\end{beamercolorbox}%
+	}%
+      }
+      \begin{frame}
+	\huge
+	\vfill
+	\centering
+	{\color{frametitle.fg}\textbf{\insertsectionhead}}
+	\vfill
+      \end{frame}
+    }
+  }
+\fi

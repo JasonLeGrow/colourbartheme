@@ -1,0 +1,101 @@
+%Prepared by Jason LeGrow in 2020
+
+%Colours
+\definecolor{TURQUOISE1}{RGB}{167,241,233}
+\definecolor{TURQUOISE2}{RGB}{115,232,220}
+\definecolor{TURQUOISE3}{RGB}{ 64,224,208}
+\definecolor{TURQUOISE4}{RGB}{ 31,193,177}
+\definecolor{TURQUOISE5}{RGB}{ 21,140,129}
+
+\definecolor{TURQUOISE1BG}{RGB}{0,0,0} 
+\definecolor{TURQUOISE2BG}{RGB}{0,0,0} 
+\definecolor{TURQUOISE3BG}{RGB}{0,0,0} 
+\definecolor{TURQUOISE4BG}{RGB}{0,0,0}
+\definecolor{TURQUOISE5BG}{RGB}{0,0,0}
+
+\definecolor{GRAYBG}{RGB}{223,223,223}
+
+%Colour Palettes
+\setbeamercolor*{palette primary}{bg = TURQUOISE1BG, fg = TURQUOISE1}
+\setbeamercolor*{palette secondary}{bg = TURQUOISE2BG, fg = TURQUOISE2}
+\setbeamercolor*{palette tertiary}{bg = TURQUOISE3BG, fg = TURQUOISE3}
+\setbeamercolor*{palette quaternary}{bg = TURQUOISE4BG, fg = TURQUOISE4}
+\setbeamercolor*{palette sidebar primary}{bg = TURQUOISE5BG, fg = TURQUOISE5}
+
+%Global Definitions
+\setbeamercolor{normal text}{fg = black}
+\setbeamercolor{alerted text}{fg = TURQUOISE3}
+
+%Title Page
+\setbeamercolor{title}{bg = TURQUOISE2, fg=black}
+\setbeamercolor{subtitle}{bg = TURQUOISE2, fg=black}
+\setbeamercolor{author}{fg = black}
+\setbeamercolor{institute}{fg = black}
+\setbeamercolor{date}{fg = black}
+
+%Table of Contents
+\setbeamercolor{section in toc}{fg = black}
+\setbeamercolor{subsection in toc}{fg = black}
+\setbeamercolor{subsubsection in toc}{fg = black}
+
+%Background
+\setbeamercolor{background canvas}{bg = white, fg = black}
+
+%Headlines and Footlines
+\setbeamercolor{headline}{bg = TURQUOISE4BG, fg=TURQUOISE1}
+\setbeamercolor{footline}{bg = TURQUOISE4BG, fg=TURQUOISE1}
+\setbeamercolor{page number in head/foot}{bg = TURQUOISE1BG, fg=TURQUOISE1}
+\setbeamercolor{author in head/foot}{bg = TURQUOISE1BG, fg=TURQUOISE1}
+\setbeamercolor{title in head/foot}{bg = TURQUOISE1BG, fg=TURQUOISE1}
+\setbeamercolor{date in head/foot}{bg = TURQUOISE1BG, fg=TURQUOISE1}
+\setbeamercolor{institute in head/foot}{bg = TURQUOISE2BG, fg=TURQUOISE2}
+
+%Blocks
+\setbeamercolor{block title}{use = palette secondary, fg=palette secondary.bg, bg=palette secondary.fg}
+\setbeamercolor{block body}{use = palette primary, fg=palette primary.bg, bg=palette primary.fg}
+%\setbeamercolor{block title}{bg = TURQUOISE3, fg=black}
+%\setbeamercolor{block body}{bg = TURQUOISE1, fg=black}
+
+\setbeamercolor{block title alerted}{bg = TURQUOISE3, fg=black}
+\setbeamercolor{block body alerted}{bg = TURQUOISE1, fg=black}
+
+%Navigation
+\setbeamercolor{section in head/foot}{fg = TURQUOISE4, bg= TURQUOISE4}
+\setbeamercolor{subsection in head/foot}{fg = TURQUOISE4}
+\setbeamercolor{subsubsection in head/foot}{fg = TURQUOISE4}
+
+%Frame Title
+\setbeamercolor{frametitle}{fg = TURQUOISE5, bg = GRAYBG}
+
+%Lists
+\setbeamercolor{item}{fg = TURQUOISE4}
+
+%Figures and Tables
+\setbeamercolor{caption}{fg = black}
+\setbeamercolor{caption name}{fg = TURQUOISE4}
+
+%Theorem Blocks
+\AtBeginEnvironment{theorem}{%
+  \setbeamercolor{block title}{use = palette secondary, fg=palette secondary.bg, bg=palette secondary.fg}
+  \setbeamercolor{block body}{use = palette primary, fg=palette primary.bg, bg=palette primary.fg}
+}
+\AtBeginEnvironment{lemma}{%
+  \setbeamercolor{block title}{use = palette secondary, fg=palette secondary.bg, bg=palette secondary.fg}
+  \setbeamercolor{block body}{use = palette primary, fg=palette primary.bg, bg=palette primary.fg}
+}
+\AtBeginEnvironment{remark}{%
+  \setbeamercolor{block title}{use = palette secondary, fg=palette secondary.bg, bg=palette secondary.fg}
+  \setbeamercolor{block body}{use = palette primary, fg=palette primary.bg, bg=palette primary.fg}
+}
+\AtBeginEnvironment{definition}{%
+  \setbeamercolor{block title}{use = palette secondary, fg=palette secondary.bg, bg=palette secondary.fg}
+  \setbeamercolor{block body}{use = palette primary, fg=palette primary.bg, bg=palette primary.fg}
+}
+%Remove shadows
+\setbeamertemplate{blocks}[rounded][shadow=false]
+
+%Bibliography
+\setbeamercolor{bibliography item}{fg=TURQUOISE4, bg=TURQUOISE4}
+\setbeamercolor{bibliography entry author}{fg=TURQUOISE3, bg=TURQUOISE3}
+\setbeamercolor{bibliography entry title}{fg=TURQUOISE4, bg=TURQUOISE4}
+\setbeamercolor{bibliography entry location}{fg=TURQUOISE3, bg=TURQUOISE3}

@@ -1,0 +1,101 @@
+%Prepared by Jason LeGrow in 2020
+
+%Colours
+\definecolor{RUBY1}{RGB}{238, 170, 182}
+\definecolor{RUBY2}{RGB}{224, 103, 123}
+\definecolor{RUBY3}{RGB}{203,  42,  69}
+\definecolor{RUBY4}{RGB}{132,  27,  45}
+\definecolor{RUBY5}{RGB}{ 68,  13,  23}
+
+\definecolor{RUBY1BG}{RGB}{0,0,0} 
+\definecolor{RUBY2BG}{RGB}{0,0,0} 
+\definecolor{RUBY3BG}{RGB}{0,0,0} 
+\definecolor{RUBY4BG}{RGB}{0,0,0}
+\definecolor{RUBY5BG}{RGB}{0,0,0}
+
+\definecolor{GRAYBG}{RGB}{223,223,223}
+
+%Colour Palettes
+\setbeamercolor*{palette primary}{bg = RUBY1BG, fg = RUBY1}
+\setbeamercolor*{palette secondary}{bg = RUBY2BG, fg = RUBY2}
+\setbeamercolor*{palette tertiary}{bg = RUBY3BG, fg = RUBY3}
+\setbeamercolor*{palette quaternary}{bg = RUBY4BG, fg = RUBY4}
+\setbeamercolor*{palette sidebar primary}{bg = RUBY5BG, fg = RUBY5}
+
+%Global Definitions
+\setbeamercolor{normal text}{fg = black}
+\setbeamercolor{alerted text}{fg = RUBY3}
+
+%Title Page
+\setbeamercolor{title}{bg = RUBY2, fg=black}
+\setbeamercolor{subtitle}{bg = RUBY2, fg=black}
+\setbeamercolor{author}{fg = black}
+\setbeamercolor{institute}{fg = black}
+\setbeamercolor{date}{fg = black}
+
+%Table of Contents
+\setbeamercolor{section in toc}{fg = black}
+\setbeamercolor{subsection in toc}{fg = black}
+\setbeamercolor{subsubsection in toc}{fg = black}
+
+%Background
+\setbeamercolor{background canvas}{bg = white, fg = black}
+
+%Headlines and Footlines
+\setbeamercolor{headline}{bg = RUBY4BG, fg=RUBY1}
+\setbeamercolor{footline}{bg = RUBY4BG, fg=RUBY1}
+\setbeamercolor{page number in head/foot}{bg = RUBY1BG, fg=RUBY1}
+\setbeamercolor{author in head/foot}{bg = RUBY1BG, fg=RUBY1}
+\setbeamercolor{title in head/foot}{bg = RUBY1BG, fg=RUBY1}
+\setbeamercolor{date in head/foot}{bg = RUBY1BG, fg=RUBY1}
+\setbeamercolor{institute in head/foot}{bg = RUBY2BG, fg=RUBY2}
+
+%Blocks
+\setbeamercolor{block title}{use = palette secondary, fg=palette secondary.bg, bg=palette secondary.fg}
+\setbeamercolor{block body}{use = palette primary, fg=palette primary.bg, bg=palette primary.fg}
+%\setbeamercolor{block title}{bg = RUBY3, fg=black}
+%\setbeamercolor{block body}{bg = RUBY1, fg=black}
+
+\setbeamercolor{block title alerted}{bg = RUBY3, fg=black}
+\setbeamercolor{block body alerted}{bg = RUBY1, fg=black}
+
+%Navigation
+\setbeamercolor{section in head/foot}{fg = RUBY4, bg= RUBY4}
+\setbeamercolor{subsection in head/foot}{fg = RUBY4}
+\setbeamercolor{subsubsection in head/foot}{fg = RUBY4}
+
+%Frame Title
+\setbeamercolor{frametitle}{fg = RUBY4, bg = GRAYBG}
+
+%Lists
+\setbeamercolor{item}{fg = RUBY4}
+
+%Figures and Tables
+\setbeamercolor{caption}{fg = black}
+\setbeamercolor{caption name}{fg = RUBY4}
+
+%Theorem Blocks
+\AtBeginEnvironment{theorem}{%
+  \setbeamercolor{block title}{use = palette secondary, fg=palette secondary.bg, bg=palette secondary.fg}
+  \setbeamercolor{block body}{use = palette primary, fg=palette primary.bg, bg=palette primary.fg}
+}
+\AtBeginEnvironment{lemma}{%
+  \setbeamercolor{block title}{use = palette secondary, fg=palette secondary.bg, bg=palette secondary.fg}
+  \setbeamercolor{block body}{use = palette primary, fg=palette primary.bg, bg=palette primary.fg}
+}
+\AtBeginEnvironment{remark}{%
+  \setbeamercolor{block title}{use = palette secondary, fg=palette secondary.bg, bg=palette secondary.fg}
+  \setbeamercolor{block body}{use = palette primary, fg=palette primary.bg, bg=palette primary.fg}
+}
+\AtBeginEnvironment{definition}{%
+  \setbeamercolor{block title}{use = palette secondary, fg=palette secondary.bg, bg=palette secondary.fg}
+  \setbeamercolor{block body}{use = palette primary, fg=palette primary.bg, bg=palette primary.fg}
+}
+%Remove shadows
+\setbeamertemplate{blocks}[rounded][shadow=false]
+
+%Bibliography
+\setbeamercolor{bibliography item}{fg=RUBY4, bg=RUBY4}
+\setbeamercolor{bibliography entry author}{fg=RUBY3, bg=RUBY3}
+\setbeamercolor{bibliography entry title}{fg=RUBY4, bg=RUBY4}
+\setbeamercolor{bibliography entry location}{fg=RUBY3, bg=RUBY3}

@@ -1,0 +1,101 @@
+%Prepared by Jason LeGrow in 2020
+
+%Colours
+\definecolor{EMERALD1}{RGB}{209, 239, 231}
+\definecolor{EMERALD2}{RGB}{149, 219, 200}
+\definecolor{EMERALD3}{RGB}{ 88, 198, 168}
+\definecolor{EMERALD4}{RGB}{ 49, 145, 119}
+\definecolor{EMERALD5}{RGB}{ 31,  91,  75}
+
+\definecolor{EMERALD1BG}{RGB}{0,0,0} 
+\definecolor{EMERALD2BG}{RGB}{0,0,0} 
+\definecolor{EMERALD3BG}{RGB}{0,0,0} 
+\definecolor{EMERALD4BG}{RGB}{0,0,0}
+\definecolor{EMERALD5BG}{RGB}{0,0,0}
+
+\definecolor{GRAYBG}{RGB}{223,223,223}
+
+%Colour Palettes
+\setbeamercolor*{palette primary}{bg = EMERALD1BG, fg = EMERALD1}
+\setbeamercolor*{palette secondary}{bg = EMERALD2BG, fg = EMERALD2}
+\setbeamercolor*{palette tertiary}{bg = EMERALD3BG, fg = EMERALD3}
+\setbeamercolor*{palette quaternary}{bg = EMERALD4BG, fg = EMERALD4}
+\setbeamercolor*{palette sidebar primary}{bg = EMERALD5BG, fg = EMERALD5}
+
+%Global Definitions
+\setbeamercolor{normal text}{fg = black}
+\setbeamercolor{alerted text}{fg = EMERALD3}
+
+%Title Page
+\setbeamercolor{title}{bg = EMERALD2, fg=black}
+\setbeamercolor{subtitle}{bg = EMERALD2, fg=black}
+\setbeamercolor{author}{fg = black}
+\setbeamercolor{institute}{fg = black}
+\setbeamercolor{date}{fg = black}
+
+%Table of Contents
+\setbeamercolor{section in toc}{fg = black}
+\setbeamercolor{subsection in toc}{fg = black}
+\setbeamercolor{subsubsection in toc}{fg = black}
+
+%Background
+\setbeamercolor{background canvas}{bg = white, fg = black}
+
+%Headlines and Footlines
+\setbeamercolor{headline}{bg = EMERALD4BG, fg=EMERALD1}
+\setbeamercolor{footline}{bg = EMERALD4BG, fg=EMERALD1}
+\setbeamercolor{page number in head/foot}{bg = EMERALD1BG, fg=EMERALD1}
+\setbeamercolor{author in head/foot}{bg = EMERALD1BG, fg=EMERALD1}
+\setbeamercolor{title in head/foot}{bg = EMERALD1BG, fg=EMERALD1}
+\setbeamercolor{date in head/foot}{bg = EMERALD1BG, fg=EMERALD1}
+\setbeamercolor{institute in head/foot}{bg = EMERALD2BG, fg=EMERALD2}
+
+%Blocks
+\setbeamercolor{block title}{use = palette secondary, fg=palette secondary.bg, bg=palette secondary.fg}
+\setbeamercolor{block body}{use = palette primary, fg=palette primary.bg, bg=palette primary.fg}
+%\setbeamercolor{block title}{bg = EMERALD3, fg=black}
+%\setbeamercolor{block body}{bg = EMERALD1, fg=black}
+
+\setbeamercolor{block title alerted}{bg = EMERALD3, fg=black}
+\setbeamercolor{block body alerted}{bg = EMERALD1, fg=black}
+
+%Navigation
+\setbeamercolor{section in head/foot}{fg = EMERALD4, bg= EMERALD4}
+\setbeamercolor{subsection in head/foot}{fg = EMERALD4}
+\setbeamercolor{subsubsection in head/foot}{fg = EMERALD4}
+
+%Frame Title
+\setbeamercolor{frametitle}{fg = EMERALD4, bg = GRAYBG}
+
+%Lists
+\setbeamercolor{item}{fg = EMERALD4}
+
+%Figures and Tables
+\setbeamercolor{caption}{fg = black}
+\setbeamercolor{caption name}{fg = EMERALD4}
+
+%Theorem Blocks
+\AtBeginEnvironment{theorem}{%
+  \setbeamercolor{block title}{use = palette secondary, fg=palette secondary.bg, bg=palette secondary.fg}
+  \setbeamercolor{block body}{use = palette primary, fg=palette primary.bg, bg=palette primary.fg}
+}
+\AtBeginEnvironment{lemma}{%
+  \setbeamercolor{block title}{use = palette secondary, fg=palette secondary.bg, bg=palette secondary.fg}
+  \setbeamercolor{block body}{use = palette primary, fg=palette primary.bg, bg=palette primary.fg}
+}
+\AtBeginEnvironment{remark}{%
+  \setbeamercolor{block title}{use = palette secondary, fg=palette secondary.bg, bg=palette secondary.fg}
+  \setbeamercolor{block body}{use = palette primary, fg=palette primary.bg, bg=palette primary.fg}
+}
+\AtBeginEnvironment{definition}{%
+  \setbeamercolor{block title}{use = palette secondary, fg=palette secondary.bg, bg=palette secondary.fg}
+  \setbeamercolor{block body}{use = palette primary, fg=palette primary.bg, bg=palette primary.fg}
+}
+%Remove shadows
+\setbeamertemplate{blocks}[rounded][shadow=false]
+
+%Bibliography
+\setbeamercolor{bibliography item}{fg=EMERALD4, bg=EMERALD4}
+\setbeamercolor{bibliography entry author}{fg=EMERALD2, bg=EMERALD2}
+\setbeamercolor{bibliography entry title}{fg=EMERALD4, bg=EMERALD4}
+\setbeamercolor{bibliography entry location}{fg=EMERALD2, bg=EMERALD2}

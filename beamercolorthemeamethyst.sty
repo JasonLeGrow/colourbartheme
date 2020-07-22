@@ -1,0 +1,101 @@
+%Prepared by Jason LeGrow in 2020
+
+%Colours
+\definecolor{AMETHYST1}{RGB}{235,224,245}
+\definecolor{AMETHYST2}{RGB}{194,163,224}
+\definecolor{AMETHYST3}{RGB}{153,102,204}
+\definecolor{AMETHYST4}{RGB}{112, 56,168}
+\definecolor{AMETHYST5}{RGB}{ 71, 36,107}
+
+\definecolor{AMETHYST1BG}{RGB}{0,0,0} 
+\definecolor{AMETHYST2BG}{RGB}{0,0,0} 
+\definecolor{AMETHYST3BG}{RGB}{0,0,0} 
+\definecolor{AMETHYST4BG}{RGB}{0,0,0}
+\definecolor{AMETHYST5BG}{RGB}{0,0,0}
+
+\definecolor{GRAYBG}{RGB}{223,223,223}
+
+%Colour Palettes
+\setbeamercolor*{palette primary}{bg = AMETHYST1BG, fg = AMETHYST1}
+\setbeamercolor*{palette secondary}{bg = AMETHYST2BG, fg = AMETHYST2}
+\setbeamercolor*{palette tertiary}{bg = AMETHYST3BG, fg = AMETHYST3}
+\setbeamercolor*{palette quaternary}{bg = AMETHYST4BG, fg = AMETHYST4}
+\setbeamercolor*{palette sidebar primary}{bg = AMETHYST5BG, fg = AMETHYST5}
+
+%Global Definitions
+\setbeamercolor{normal text}{fg = black}
+\setbeamercolor{alerted text}{fg = AMETHYST3}
+
+%Title Page
+\setbeamercolor{title}{bg = AMETHYST2, fg=black}
+\setbeamercolor{subtitle}{bg = AMETHYST2, fg=black}
+\setbeamercolor{author}{fg = black}
+\setbeamercolor{institute}{fg = black}
+\setbeamercolor{date}{fg = black}
+
+%Table of Contents
+\setbeamercolor{section in toc}{fg = black}
+\setbeamercolor{subsection in toc}{fg = black}
+\setbeamercolor{subsubsection in toc}{fg = black}
+
+%Background
+\setbeamercolor{background canvas}{bg = white, fg = black}
+
+%Headlines and Footlines
+\setbeamercolor{headline}{bg = AMETHYST4BG, fg=AMETHYST1}
+\setbeamercolor{footline}{bg = AMETHYST4BG, fg=AMETHYST1}
+\setbeamercolor{page number in head/foot}{bg = AMETHYST1BG, fg=AMETHYST1}
+\setbeamercolor{author in head/foot}{bg = AMETHYST1BG, fg=AMETHYST1}
+\setbeamercolor{title in head/foot}{bg = AMETHYST1BG, fg=AMETHYST1}
+\setbeamercolor{date in head/foot}{bg = AMETHYST1BG, fg=AMETHYST1}
+\setbeamercolor{institute in head/foot}{bg = AMETHYST2BG, fg=AMETHYST2}
+
+%Blocks
+\setbeamercolor{block title}{use = palette secondary, fg=palette secondary.bg, bg=palette secondary.fg}
+\setbeamercolor{block body}{use = palette primary, fg=palette primary.bg, bg=palette primary.fg}
+%\setbeamercolor{block title}{bg = AMETHYST3, fg=black}
+%\setbeamercolor{block body}{bg = AMETHYST1, fg=black}
+
+\setbeamercolor{block title alerted}{bg = AMETHYST3, fg=black}
+\setbeamercolor{block body alerted}{bg = AMETHYST1, fg=black}
+
+%Navigation
+\setbeamercolor{section in head/foot}{fg = AMETHYST4, bg= AMETHYST4}
+\setbeamercolor{subsection in head/foot}{fg = AMETHYST4}
+\setbeamercolor{subsubsection in head/foot}{fg = AMETHYST4}
+
+%Frame Title
+\setbeamercolor{frametitle}{fg = AMETHYST4, bg = GRAYBG}
+
+%Lists
+\setbeamercolor{item}{fg = AMETHYST4}
+
+%Figures and Tables
+\setbeamercolor{caption}{fg = black}
+\setbeamercolor{caption name}{fg = AMETHYST4}
+
+%Theorem Blocks
+\AtBeginEnvironment{theorem}{%
+  \setbeamercolor{block title}{use = palette secondary, fg=palette secondary.bg, bg=palette secondary.fg}
+  \setbeamercolor{block body}{use = palette primary, fg=palette primary.bg, bg=palette primary.fg}
+}
+\AtBeginEnvironment{lemma}{%
+  \setbeamercolor{block title}{use = palette secondary, fg=palette secondary.bg, bg=palette secondary.fg}
+  \setbeamercolor{block body}{use = palette primary, fg=palette primary.bg, bg=palette primary.fg}
+}
+\AtBeginEnvironment{remark}{%
+  \setbeamercolor{block title}{use = palette secondary, fg=palette secondary.bg, bg=palette secondary.fg}
+  \setbeamercolor{block body}{use = palette primary, fg=palette primary.bg, bg=palette primary.fg}
+}
+\AtBeginEnvironment{definition}{%
+  \setbeamercolor{block title}{use = palette secondary, fg=palette secondary.bg, bg=palette secondary.fg}
+  \setbeamercolor{block body}{use = palette primary, fg=palette primary.bg, bg=palette primary.fg}
+}
+%Remove shadows
+\setbeamertemplate{blocks}[rounded][shadow=false]
+
+%Bibliography
+\setbeamercolor{bibliography item}{fg=AMETHYST4, bg=AMETHYST4}
+\setbeamercolor{bibliography entry author}{fg=AMETHYST2, bg=AMETHYST2}
+\setbeamercolor{bibliography entry title}{fg=AMETHYST4, bg=AMETHYST4}
+\setbeamercolor{bibliography entry location}{fg=AMETHYST2, bg=AMETHYST2}

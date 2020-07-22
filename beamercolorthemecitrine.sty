@@ -1,0 +1,101 @@
+%Prepared by Jason LeGrow in 2020
+
+%Colours
+\definecolor{CITRINE1}{RGB}{251,242,157}
+\definecolor{CITRINE2}{RGB}{248,233, 98}
+\definecolor{CITRINE3}{RGB}{246,225, 40}
+\definecolor{CITRINE4}{RGB}{228,208, 10}
+\definecolor{CITRINE5}{RGB}{196,177,  8}
+
+\definecolor{CITRINE1BG}{RGB}{0,0,0} 
+\definecolor{CITRINE2BG}{RGB}{0,0,0} 
+\definecolor{CITRINE3BG}{RGB}{0,0,0} 
+\definecolor{CITRINE4BG}{RGB}{0,0,0}
+\definecolor{CITRINE5BG}{RGB}{0,0,0}
+
+\definecolor{GRAYBG}{RGB}{223,223,223}
+
+%Colour Palettes
+\setbeamercolor*{palette primary}{bg = CITRINE1BG, fg = CITRINE1}
+\setbeamercolor*{palette secondary}{bg = CITRINE2BG, fg = CITRINE2}
+\setbeamercolor*{palette tertiary}{bg = CITRINE3BG, fg = CITRINE3}
+\setbeamercolor*{palette quaternary}{bg = CITRINE4BG, fg = CITRINE4}
+\setbeamercolor*{palette sidebar primary}{bg = CITRINE5BG, fg = CITRINE5}
+
+%Global Definitions
+\setbeamercolor{normal text}{fg = black}
+\setbeamercolor{alerted text}{fg = CITRINE4}
+
+%Title Page
+\setbeamercolor{title}{bg = CITRINE2, fg=black}
+\setbeamercolor{subtitle}{bg = CITRINE2, fg=black}
+\setbeamercolor{author}{fg = black}
+\setbeamercolor{institute}{fg = black}
+\setbeamercolor{date}{fg = black}
+
+%Table of Contents
+\setbeamercolor{section in toc}{fg = black}
+\setbeamercolor{subsection in toc}{fg = black}
+\setbeamercolor{subsubsection in toc}{fg = black}
+
+%Background
+\setbeamercolor{background canvas}{bg = white, fg = black}
+
+%Headlines and Footlines
+\setbeamercolor{headline}{bg = CITRINE4BG, fg=CITRINE1}
+\setbeamercolor{footline}{bg = CITRINE4BG, fg=CITRINE1}
+\setbeamercolor{page number in head/foot}{bg = CITRINE1BG, fg=CITRINE1}
+\setbeamercolor{author in head/foot}{bg = CITRINE1BG, fg=CITRINE1}
+\setbeamercolor{title in head/foot}{bg = CITRINE1BG, fg=CITRINE1}
+\setbeamercolor{date in head/foot}{bg = CITRINE1BG, fg=CITRINE1}
+\setbeamercolor{institute in head/foot}{bg = CITRINE2BG, fg=CITRINE2}
+
+%Blocks
+\setbeamercolor{block title}{use = palette secondary, fg=palette secondary.bg, bg=palette secondary.fg}
+\setbeamercolor{block body}{use = palette primary, fg=palette primary.bg, bg=palette primary.fg}
+%\setbeamercolor{block title}{bg = CITRINE3, fg=black}
+%\setbeamercolor{block body}{bg = CITRINE1, fg=black}
+
+\setbeamercolor{block title alerted}{bg = CITRINE3, fg=black}
+\setbeamercolor{block body alerted}{bg = CITRINE1, fg=black}
+
+%Navigation
+\setbeamercolor{section in head/foot}{fg = CITRINE4, bg= CITRINE4}
+\setbeamercolor{subsection in head/foot}{fg = CITRINE4}
+\setbeamercolor{subsubsection in head/foot}{fg = CITRINE4}
+
+%Frame Title
+\setbeamercolor{frametitle}{fg = black, bg = GRAYBG}
+
+%Lists
+\setbeamercolor{item}{fg = CITRINE5}
+
+%Figures and Tables
+\setbeamercolor{caption}{fg = black}
+\setbeamercolor{caption name}{fg = CITRINE5}
+
+%Theorem Blocks
+\AtBeginEnvironment{theorem}{%
+  \setbeamercolor{block title}{use = palette secondary, fg=palette secondary.bg, bg=palette secondary.fg}
+  \setbeamercolor{block body}{use = palette primary, fg=palette primary.bg, bg=palette primary.fg}
+}
+\AtBeginEnvironment{lemma}{%
+  \setbeamercolor{block title}{use = palette secondary, fg=palette secondary.bg, bg=palette secondary.fg}
+  \setbeamercolor{block body}{use = palette primary, fg=palette primary.bg, bg=palette primary.fg}
+}
+\AtBeginEnvironment{remark}{%
+  \setbeamercolor{block title}{use = palette secondary, fg=palette secondary.bg, bg=palette secondary.fg}
+  \setbeamercolor{block body}{use = palette primary, fg=palette primary.bg, bg=palette primary.fg}
+}
+\AtBeginEnvironment{definition}{%
+  \setbeamercolor{block title}{use = palette secondary, fg=palette secondary.bg, bg=palette secondary.fg}
+  \setbeamercolor{block body}{use = palette primary, fg=palette primary.bg, bg=palette primary.fg}
+}
+%Remove shadows
+\setbeamertemplate{blocks}[rounded][shadow=false]
+
+%Bibliography
+\setbeamercolor{bibliography item}{fg=CITRINE5, bg=CITRINE5}
+\setbeamercolor{bibliography entry author}{fg=CITRINE5, bg=CITRINE5}
+\setbeamercolor{bibliography entry title}{fg=CITRINE4, bg=CITRINE4}
+\setbeamercolor{bibliography entry location}{fg=CITRINE5, bg=CITRINE5}

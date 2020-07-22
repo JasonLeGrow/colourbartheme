@@ -1,0 +1,101 @@
+%Prepared by Jason LeGrow in 2020
+
+%Colours
+\definecolor{SAPPHIRE1}{RGB}{166, 221, 242}
+\definecolor{SAPPHIRE2}{RGB}{ 94, 193, 232}
+\definecolor{SAPPHIRE3}{RGB}{ 31, 162, 214}
+\definecolor{SAPPHIRE4}{RGB}{ 18,  97, 128}
+\definecolor{SAPPHIRE5}{RGB}{ 10,  54,  71}
+
+\definecolor{SAPPHIRE1BG}{RGB}{0,0,0} 
+\definecolor{SAPPHIRE2BG}{RGB}{0,0,0} 
+\definecolor{SAPPHIRE3BG}{RGB}{0,0,0} 
+\definecolor{SAPPHIRE4BG}{RGB}{0,0,0}
+\definecolor{SAPPHIRE5BG}{RGB}{0,0,0}
+
+\definecolor{GRAYBG}{RGB}{223,223,223}
+
+%Colour Palettes
+\setbeamercolor*{palette primary}{bg = SAPPHIRE1BG, fg = SAPPHIRE1}
+\setbeamercolor*{palette secondary}{bg = SAPPHIRE2BG, fg = SAPPHIRE2}
+\setbeamercolor*{palette tertiary}{bg = SAPPHIRE3BG, fg = SAPPHIRE3}
+\setbeamercolor*{palette quaternary}{bg = SAPPHIRE4BG, fg = SAPPHIRE4}
+\setbeamercolor*{palette sidebar primary}{bg = SAPPHIRE5BG, fg = SAPPHIRE5}
+
+%Global Definitions
+\setbeamercolor{normal text}{fg = black}
+\setbeamercolor{alerted text}{fg = SAPPHIRE3}
+
+%Title Page
+\setbeamercolor{title}{bg = SAPPHIRE2, fg=black}
+\setbeamercolor{subtitle}{bg = SAPPHIRE2, fg=black}
+\setbeamercolor{author}{fg = black}
+\setbeamercolor{institute}{fg = black}
+\setbeamercolor{date}{fg = black}
+
+%Table of Contents
+\setbeamercolor{section in toc}{fg = black}
+\setbeamercolor{subsection in toc}{fg = black}
+\setbeamercolor{subsubsection in toc}{fg = black}
+
+%Background
+\setbeamercolor{background canvas}{bg = white, fg = black}
+
+%Headlines and Footlines
+\setbeamercolor{headline}{bg = SAPPHIRE4BG, fg=SAPPHIRE1}
+\setbeamercolor{footline}{bg = SAPPHIRE4BG, fg=SAPPHIRE1}
+\setbeamercolor{page number in head/foot}{bg = SAPPHIRE1BG, fg=SAPPHIRE1}
+\setbeamercolor{author in head/foot}{bg = SAPPHIRE1BG, fg=SAPPHIRE1}
+\setbeamercolor{title in head/foot}{bg = SAPPHIRE1BG, fg=SAPPHIRE1}
+\setbeamercolor{date in head/foot}{bg = SAPPHIRE1BG, fg=SAPPHIRE1}
+\setbeamercolor{institute in head/foot}{bg = SAPPHIRE2BG, fg=SAPPHIRE2}
+
+%Blocks
+\setbeamercolor{block title}{use = palette secondary, fg=palette secondary.bg, bg=palette secondary.fg}
+\setbeamercolor{block body}{use = palette primary, fg=palette primary.bg, bg=palette primary.fg}
+%\setbeamercolor{block title}{bg = SAPPHIRE3, fg=black}
+%\setbeamercolor{block body}{bg = SAPPHIRE1, fg=black}
+
+\setbeamercolor{block title alerted}{bg = SAPPHIRE3, fg=black}
+\setbeamercolor{block body alerted}{bg = SAPPHIRE1, fg=black}
+
+%Navigation
+\setbeamercolor{section in head/foot}{fg = SAPPHIRE4, bg= SAPPHIRE4}
+\setbeamercolor{subsection in head/foot}{fg = SAPPHIRE4}
+\setbeamercolor{subsubsection in head/foot}{fg = SAPPHIRE4}
+
+%Frame Title
+\setbeamercolor{frametitle}{fg = SAPPHIRE4, bg = GRAYBG}
+
+%Lists
+\setbeamercolor{item}{fg = SAPPHIRE4}
+
+%Figures and Tables
+\setbeamercolor{caption}{fg = black}
+\setbeamercolor{caption name}{fg = SAPPHIRE4}
+
+%Theorem Blocks
+\AtBeginEnvironment{theorem}{%
+  \setbeamercolor{block title}{use = palette secondary, fg=palette secondary.bg, bg=palette secondary.fg}
+  \setbeamercolor{block body}{use = palette primary, fg=palette primary.bg, bg=palette primary.fg}
+}
+\AtBeginEnvironment{lemma}{%
+  \setbeamercolor{block title}{use = palette secondary, fg=palette secondary.bg, bg=palette secondary.fg}
+  \setbeamercolor{block body}{use = palette primary, fg=palette primary.bg, bg=palette primary.fg}
+}
+\AtBeginEnvironment{remark}{%
+  \setbeamercolor{block title}{use = palette secondary, fg=palette secondary.bg, bg=palette secondary.fg}
+  \setbeamercolor{block body}{use = palette primary, fg=palette primary.bg, bg=palette primary.fg}
+}
+\AtBeginEnvironment{definition}{%
+  \setbeamercolor{block title}{use = palette secondary, fg=palette secondary.bg, bg=palette secondary.fg}
+  \setbeamercolor{block body}{use = palette primary, fg=palette primary.bg, bg=palette primary.fg}
+}
+%Remove shadows
+\setbeamertemplate{blocks}[rounded][shadow=false]
+
+%Bibliography
+\setbeamercolor{bibliography item}{fg=SAPPHIRE4, bg=SAPPHIRE4}
+\setbeamercolor{bibliography entry author}{fg=SAPPHIRE3, bg=SAPPHIRE3}
+\setbeamercolor{bibliography entry title}{fg=SAPPHIRE4, bg=SAPPHIRE4}
+\setbeamercolor{bibliography entry location}{fg=SAPPHIRE3, bg=SAPPHIRE3}
